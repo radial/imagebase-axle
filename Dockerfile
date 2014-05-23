@@ -8,5 +8,5 @@
 # container for bind mounts and other persistent data that needs access from
 # multiple containers.
 
-FROM        radial/busybox
+FROM        radial/busyboxplus:base
 CMD         ["/bin/true"]
