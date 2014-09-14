@@ -8,5 +8,8 @@
 # container for bind mounts and other persistent data that needs access from
 # multiple containers.
 
-FROM        radial/busyboxplus:base
-CMD         ["/bin/true"]
+FROM            radial/busyboxplus:base
+
+# Simple program to keep the container alive and do nothing
+COPY            IDLE /usr/bin/IDLE
+CMD             ["IDLE"]
